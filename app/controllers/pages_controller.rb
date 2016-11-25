@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def using_pinapp
+  end
 end
