@@ -15,7 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.2'
 gem 'paperclip', github: 'thoughtbot/paperclip'
-
+gem 'aws-sdk', '~> 2.5', '>= 2.5.5'
 
 group :development, :test do
     gem 'sqlite3'
