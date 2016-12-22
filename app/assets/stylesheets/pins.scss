@@ -8,9 +8,30 @@
 
 .box {
 	margin: 5px;
-	width: 214px;
+	width: 350px;
+	background-color: white;
+	border-radius: 10px ;
+}
+.box:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box img {
 	width: 100%;
+	background-color: white;
+	border-radius: 10px 10px 0 0 ;
+}
+
+
+
+.bigbox {
+	margin: 5px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px ;
+}
+.bigbox img {
+	width: 100%;
+	background-color: white;
+	border-radius: 10px 10px 0 0 ;
 }

@@ -19,6 +19,7 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~> 2.5', '>= 2.5.5'
 gem 'masonry-rails', '~> 0.2.0'
 gem 'imagesLoaded_rails'
+gem 'bootstrap-glyphicons'
 
 group :development, :test do
     gem 'sqlite3'
