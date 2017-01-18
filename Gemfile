@@ -22,6 +22,7 @@ gem 'imagesLoaded_rails'
 gem 'bootstrap-glyphicons'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+gem 'rails_admin', '~> 1.0'
 
 group :development, :test do
     gem 'sqlite3'

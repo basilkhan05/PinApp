@@ -1,3 +1,4 @@
+<div class="panel-body"> 
 <%= form_for @pin , html: { multipart: true } do |f| %>
   <% if @pin.errors.any? %>
     <div id="error_explanation">
@@ -11,16 +12,18 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :image %><br>
-    <%= f.file_field :image %>
+    <%= f.file_field :image, autofocus: true, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_field :description, autofocus: true, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="form-group">
+    <%= f.submit "Submit Pin", class: "btn btn-primary"  %>
   </div>
 <% end %>
+</div>
