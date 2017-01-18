@@ -205,7 +205,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (~> 2.5, >= 2.5.5)
+  aws-sdk (~> 2.3)
   bootstrap-glyphicons
   bootstrap-sass
   byebug
