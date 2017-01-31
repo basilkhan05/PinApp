@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   root 'pins#index'
   get "about" => "pages#about" #creates about path
   get "using_pinapp" => "pages#using_pinapp" 
+  resources :pins do
+    resources :comments
+  end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
