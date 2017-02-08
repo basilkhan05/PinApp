@@ -1,7 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  comment: MyString
+  name: MyString
+  body: MyText
+  pin_id: 
 
 two:
-  comment: MyString
+  name: MyString
+  body: MyText
+  pin_id: 
+

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :comments
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :pins
+  resources :pins do 
+    resource :comments
+  end
   devise_for :users
   root 'pins#index'
   get "about" => "pages#about" #creates about path
