@@ -1,4 +1,12 @@
-<%= comment.name %>
-<%= comment.body %>
-<%= time_ago_in_words(comment.created_at) %>
+<% if comment.body?  %>
+<div class="panel panel-primary">
+  <div class="panel-body"><%= comment.body %></div>
+  <div class="panel-footer">Commented by <%= comment.name %>
+  	<% if comment.created_at?  %>
+		<%= time_ago_in_words(comment.created_at) %>
+	<% end %>
+  </div>
+</div>
+<% end  %>
+
 

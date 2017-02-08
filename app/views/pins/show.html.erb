@@ -23,11 +23,23 @@
 	</div>
 
 	<br>
-	<h2> <%= @pin.comments.count %> Comments</h2>
-		<%= render @pin.comments %>
-		<h3>Add a Comment </h3>
-		<%= render 'comments/form' %>
+	<div class="panel panel-default  panel-body">
 
+	<h3 class="center">Thoughts? Enter your comments below</h3>
+
+	<% if user_signed_in? %>
+		<%= render 'comments/form' %>
+	<% else %>
+		<p class="center">Please <%= link_to "Login", new_user_session_path %> to Comment below</p>
+	<% end %>
+
+		<h5 class="center"> 
+			This idea has <%= @pin.comments.count %> Comment(s)
+		</h5>
+
+			<%= render @pin.comments %>
+
+	</div>
 
 </div>   
 </div>
