@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20170207014524) do
 
   create_table "comments", force: :cascade do |t|
@@ -22,6 +23,7 @@ ActiveRecord::Schema.define(version: 20170207014524) do
   end
 
   add_index "comments", ["pin_id"], name: "index_comments_on_pin_id"
+
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
