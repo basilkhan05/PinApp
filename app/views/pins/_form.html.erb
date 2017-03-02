@@ -23,6 +23,11 @@
   </div>
 
   <div class="form-group">
+    <p>Idea Detailed Description</p><br>
+    <%= f.text_field :long_description, autofocus: true, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
     <%= f.submit "Submit Pin", class: "btn btn-primary"  %>
   </div>
 <% end %>
