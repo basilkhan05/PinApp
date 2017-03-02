@@ -18,13 +18,13 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :description %><br>
+    <b>Idea Detailed Description</b><br>
     <%= f.text_field :description, autofocus: true, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <p>Idea Detailed Description</p><br>
-    <%= f.text_field :long_description, autofocus: true, class: "form-control" %>
+    <%= f.label :long_description %><br>
+    <%= f.text_area :long_description, autofocus: true, class: "form-control" %>
   </div>
 
   <div class="form-group">

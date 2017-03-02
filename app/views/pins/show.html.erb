@@ -16,6 +16,7 @@
 		  <%= @pin.description %>
 		</h1>
 		<p class="center">Pinned by <%= @pin.user.name if @pin.user %></p>
+		<p><%= @pin.long_description %></p>
 	</div>
 	<div class="panel-body">
 		<% if user_signed_in? %>
